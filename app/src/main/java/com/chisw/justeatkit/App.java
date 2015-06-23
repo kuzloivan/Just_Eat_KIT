@@ -10,12 +10,21 @@ import com.chisw.justeatkit.network.NetManager;
 public class App extends Application {
 
     private NetManager netManager;
+    private RestoreManager restoreManager;
 
 
     @Override
     public void onCreate() {
         super.onCreate();
-        NetManager netManager = new NetManager();
-        netManager.getRestaurant("se19");
+        restoreManager =new RestoreManager();
+        netManager = new NetManager(this,restoreManager);
+    }
+
+    public NetManager getNetManager() {
+        return netManager;
+    }
+
+    public RestoreManager getRestoreManager() {
+        return restoreManager;
     }
 }

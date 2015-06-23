@@ -5,7 +5,31 @@ package com.chisw.justeatkit.models;
  */
 public class DealsModel {
 
-    String Description;
-    String DiscountPercent;
-    String QualifyingPrice;
+    private  String Description;
+    private  String DiscountPercent;
+    private  String QualifyingPrice;
+
+    public String getDescription() {
+        return Description;
+    }
+
+    public void setDescription(String description) {
+        Description = description;
+    }
+
+    public String getDiscountPercent() {
+        return DiscountPercent;
+    }
+
+    public void setDiscountPercent(String discountPercent) {
+        DiscountPercent = discountPercent;
+    }
+
+    public String getQualifyingPrice() {
+        return QualifyingPrice;
+    }
+
+    public void setQualifyingPrice(String qualifyingPrice) {
+        QualifyingPrice = qualifyingPrice;
+    }
 }
